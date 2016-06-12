@@ -1,0 +1,22 @@
+{
+    "Kafka": {
+        "ZkHosts": ["10.10.10.117:2181"],
+        "ZkPath": "/kafka/GSTest01",
+        "KafkaAddrs": ["10.10.10.117:9092","10.10.10.111:9092","10.10.10.113:9092"],
+        "OffsetInterval": 50000000
+    },
+    "Groups":
+    [
+        ##conf/redirector.json.airportalarm.test##
+    ],
+    "Log": {
+        "Output": "log",
+        "Level": "debug",
+        "FileRotate": 5,
+        "type": "file",
+        "level": "DEBUG",
+        "fileName": "log",
+        "fileRotateCount": 2,
+        "fileRotateSize": 104857600
+    }
+}

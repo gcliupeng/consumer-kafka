@@ -1,0 +1,42 @@
+{
+    "Group":"test_wanliu_airportalarm",
+    "Topics":[
+        {
+            "Topic":"wanliu_order_strived",
+            "EnsureConsume":true,
+            "Access":["http://127.0.0.1:10001/test-anti-spam"],
+            "Concurrency":20,
+            "Actions":["Transit"],
+            "Transit":{"goid":"order_id", "district":"", "biztype":"", "extra_type":""}
+        },
+        {
+            "Topic":"wanliu_order_begin_charge",
+            "EnsureConsume":true,
+            "Access":["http://127.0.0.1:10001/test-anti-spam"],
+            "Concurrency":20,
+            "Actions":["Transit"],
+            "Transit":{"goid":"order_id", "district":"", "biztype":"", "extra_type":""}
+        }
+    ]
+},
+{
+    "Group":"test_wanliu_airportalarm2",
+    "Topics":[
+        {
+            "Topic":"wanliu_order_strived",
+            "EnsureConsume":true,
+            "Access":["http://127.0.0.1:10001/test-anti-spam"],
+            "Concurrency":20,
+            "Actions":["Transit"],
+            "Transit":{"goid":"order_id", "district":"", "biztype":"", "extra_type":""}
+        },
+        {
+            "Topic":"wanliu_order_begin_charge",
+            "EnsureConsume":true,
+            "Access":["http://127.0.0.1:10001/test-anti-spam"],
+            "Concurrency":20,
+            "Actions":["Transit"],
+            "Transit":{"goid":"order_id", "district":"", "biztype":"", "extra_type":""}
+        }
+    ]
+}
